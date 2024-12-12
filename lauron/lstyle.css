@@ -1,0 +1,112 @@
+  /* Basic Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./images/viper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Form Container */
+.login-form {
+    background: linear-gradient(0deg, green, lightgreen);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form Title */
+.login-form h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Input Fields */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #32e03b;
+    outline: none;
+}
+
+/* Submit Button */
+.login-form button {
+    width: 60%;
+    padding: 0.75rem;
+    background-color: #47e04c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.login-form button:hover {
+    background-color: #388E3C;
+}
+
+/* Register Button */
+.register-button {
+    background-color: #0062cc;
+    margin-top: 1rem;
+}
+
+.register-button:hover {
+    background-color: #004a99;
+}
+
+/* Lockout Message */
+#lockout-message {
+    display: none;
+    margin-top: 1rem;
+    color: red;
+    font-size: 1rem;
+}
+
+/* Output Message */
+.login-form #output {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #77f474;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    .login-form {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .login-form button {
+        width: 100%;
+    }
+}

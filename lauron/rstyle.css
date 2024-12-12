@@ -1,0 +1,111 @@
+    /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('./images/jet.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* Form Container */
+        .register-form {
+            background: linear-gradient(0deg, #0078d7, #89c4ff);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+
+        /* Form Title */
+        .register-form h2 {
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        /* Input Fields */
+        .register-form input[type="text"],
+        .register-form input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .register-form input[type="text"]:focus,
+        .register-form input[type="password"]:focus {
+            border-color: #89c4ff;
+            outline: none;
+        }
+
+        /* Address Fields Styling */
+        .address-container input {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Submit Button */
+        .register-form button {
+            width: 60%;
+            padding: 0.75rem;
+            background-color: #0062cc;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .register-form button:hover {
+            background-color: #004a99;
+        }
+
+        /* Back to Login Button */
+        .back-button {
+            background-color: #32e03b;
+            margin-top: 1rem;
+        }
+
+        .back-button:hover {
+            background-color: #288c2a;
+        }
+
+        /* Output Message */
+        .register-form #output {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+
+            .register-form {
+                padding: 1rem;
+                max-width: 90%;
+            }
+
+            .register-form button {
+                width: 100%;
+            }
+        }
